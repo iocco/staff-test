@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  staff-test-container:
+    image: spring-boot-staff-test-app:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
